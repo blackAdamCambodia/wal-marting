@@ -1,7 +1,7 @@
 <script setup>
     import TopMenu from "../components/Common/TopMenu.vue";
     import Header from "../components/Common/HeaderView.vue";
-    import ReturnPolicy from "../components/Common/ReturnPolicy.vue";
+    import Product from "../components/Product.vue";
     import CompanyPolicy from "../components/Common/CompanyPolicy.vue";
     import Footer from "../components/Common/FooterView.vue";
 </script>
@@ -9,7 +9,7 @@
     <div>
         <TopMenu />
         <Header />
-        <ReturnPolicy/>
+        <Product/>
         <CompanyPolicy />
         <Footer />
     </div>

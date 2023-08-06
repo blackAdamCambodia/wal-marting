@@ -1,19 +1,15 @@
 <script setup>
-import TopMenu from "../components/TopMenu.vue";
-import Header from "../components/HeaderView.vue";
-import HomeBanner from "../components/HomeBanner.vue";
-import NewProduct from "../components/NewProduct.vue";
-import AdOne from "../components/AdSpaceOne.vue";
-import FeaturedProduct from "../components/FeaturedProduct.vue";
-import BestSelling from "../components/BestSelling.vue";
-import AdTwo from "../components/AdSpaceTwo.vue";
-import BeautyHealth from "../components/BeautyHealth.vue";
-import WomenCloth from "../components/WomenCloth.vue";
-import ComputerAccessories from "../components/ComputerAccessories.vue";
-import AdThree from "../components/AdSpaceThree.vue";
-import CategoriesBrands from "../components/CategoriesBrands.vue";
-import CompanyPolicy from "../components/CompanyPolicy.vue";
-import Footer from "../components/FooterView.vue";
+import TopMenu from "../components/Common/TopMenu.vue";
+import Header from "../components/Common/HeaderView.vue";
+import HomeBanner from "../components/Common/HomeBanner.vue";
+import NewProduct from "../components/Home/NewProduct.vue";
+import FeaturedProduct from "../components/Home/FeaturedProduct.vue";
+import BestSelling from "../components/Home/BestSelling.vue";
+import BeautyHealth from "../components/Home/BeautyHealth.vue";
+import WomenCloth from "../components/Home/WomenCloth.vue";
+import ComputerAccessories from "../components/Home/ComputerAccessories.vue";
+import CompanyPolicy from "../components/Common/CompanyPolicy.vue";
+import Footer from "../components/Common/FooterView.vue";
 
 
 
@@ -23,16 +19,12 @@ import Footer from "../components/FooterView.vue";
         <TopMenu />
         <Header />
         <HomeBanner />
-        <AdOne />
         <NewProduct/>
         <FeaturedProduct />
         <BestSelling />
-        <AdTwo />
         <BeautyHealth />
         <WomenCloth />
         <ComputerAccessories />
-        <AdThree />
-        <CategoriesBrands />
         <CompanyPolicy />
         <Footer />
     </div>

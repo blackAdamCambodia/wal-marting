@@ -1,9 +1,9 @@
 <script setup>
-    import TopMenu from "../components/TopMenu.vue";
-    import Header from "../components/HeaderView.vue";
-    import SupportPolicy from "../components/SupportPolicy.vue";
-    import CompanyPolicy from "../components/CompanyPolicy.vue";
-    import Footer from "../components/FooterView.vue";
+    import TopMenu from "../components/Common/TopMenu.vue";
+    import Header from "../components/Common/HeaderView.vue";
+    import SupportPolicy from "../components/Common/SupportPolicy.vue";
+    import CompanyPolicy from "../components/Common/CompanyPolicy.vue";
+    import Footer from "../components/Common/FooterView.vue";
 </script>
 <template>
     <div>

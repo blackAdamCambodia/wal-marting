@@ -2,9 +2,9 @@
 <template>
     <div>
         <section class="pt-4 mb-4">
-            <div class="container text-center">
+            <div class="container ">
                 <div class="row">
-                    <div class="col-lg-6 text-center text-lg-left">
+                    <div class="col-lg-6 text-sm-left">
                         <h1 class="fw-600 h4">Compare</h1>
                     </div>
                     <div class="col-lg-6">

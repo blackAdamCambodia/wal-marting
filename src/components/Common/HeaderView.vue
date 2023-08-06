@@ -1,5 +1,5 @@
 <script setup>
-import logo from "../assets/image/walmartLogo.png"
+import logo from "/image/walmartLogo.png"
 const logoImage = {
     src:logo,
     alt:"walmart-logo"
@@ -13,7 +13,7 @@ const logoWidth= "maxWidth:100%; height:40px"
                 <div class="d-flex align-items-center">
 
                     <div class="col-auto col-xl-3 pl-0 pr-3 d-flex align-items-center">
-                        <a class="d-block py-4 me-3 ms-0" href="https://wal-marting.com">
+                        <a class="d-block py-4 me-3 ms-0" href="https://shancheng2.chainbitraclo.com">
                             <img v-bind="logoImage" :style="logoWidth" height="40">
                         </a>
 
@@ -28,7 +28,7 @@ const logoWidth= "maxWidth:100%; height:40px"
 
                     <div class="flex-grow-1 front-header-search d-flex align-items-center bg-white">
                         <div class="position-relative flex-grow-1">
-                            <form action="https://wal-marting.com/search" method="GET" class="stop-propagation">
+                            <form action="https://shancheng2.chainbitraclo.com/search" method="GET" class="stop-propagation">
                                 <div class="d-flex position-relative align-items-center">
                                     <div class="d-lg-none" data-toggle="class-toggle" data-target=".front-header-search">
                                         <button class="btn px-2" type="button"><i
@@ -68,7 +68,7 @@ const logoWidth= "maxWidth:100%; height:40px"
                     <div class="d-none d-lg-none ms-3 me-0">
                         <div class="nav-search-box">
                             <a href="#" class="nav-box-link">
-                                <i class="fa fa-search  la-flip-horizontal d-inline-block nav-box-icon"></i>
+                                <i class="fa fa-search  fa-flip-horizontal d-inline-block nav-box-icon"></i>
                             </a>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ const logoWidth= "maxWidth:100%; height:40px"
 
                     <div class="d-none d-lg-block ms-3 me-0">
                         <div class="" id="wishlist">
-                            <a href="https://wal-marting.com/wishlists" class="d-flex align-items-center text-reset">
+                            <a href="https://shancheng2.chainbitraclo.com/wishlists" class="d-flex align-items-center text-reset">
                                 <i class="fa fa-heart-o la-2x opacity-80"></i>
                                 <span class="flex-grow-1 ms-1">
                                     <span class="badge badge-primary badge-inline badge-pill">0</span>
@@ -99,7 +99,7 @@ const logoWidth= "maxWidth:100%; height:40px"
 
                     <div class="d-none d-lg-block  align-self-stretch ms-3 me-0" data-hover="dropdown">
                         <div class="nav-cart-box dropdown h-100" id="cart_items">
-                            <a href="javascript:void(0)" class="d-flex align-items-center text-reset h-100"
+                            <a href="/cart" class="d-flex align-items-center text-reset h-100"
                                 data-toggle="dropdown" data-display="static">
                                 <i class="fa fa-shopping-cart la-2x opacity-80"></i>
                                 <span class="flex-grow-1 ms-1">
@@ -146,5 +146,9 @@ const logoWidth= "maxWidth:100%; height:40px"
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border: none;
+}
+i.fa-search {
+    line-height: 20px;
+    margin-left: -7px;
 }
 </style>

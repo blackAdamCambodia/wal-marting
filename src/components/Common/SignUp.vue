@@ -107,8 +107,8 @@ export default {
                                             </label>
                                         </div>
 
-                                        <div class="mb-5">
-                                            <button type="submit" class="btn btn-primary btn-block fw-600">Create
+                                        <div class="mb-5 ">
+                                            <button type="submit" class="btn btn-primary w-100 fw-600">Create
                                                 Account</button>
                                         </div>
                                     </form>

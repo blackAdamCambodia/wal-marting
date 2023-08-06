@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-    <section class="bg-white border-top mt-auto">
+    <section class="bg-white border-top mt-6">
     <div class="container">
         <div class="row no-gutters">
             <div class="col-lg-3 col-md-6">

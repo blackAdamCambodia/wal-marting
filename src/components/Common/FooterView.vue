@@ -1,4 +1,7 @@
-<script setup></script>
+<script>
+
+
+</script>
 <template>
     <div>
         <section class="bg-dark  py-5 text-light footer-widget">
@@ -37,13 +40,13 @@
                                 </form>
                             </div>
                             <div class="w-300px mw-100 mx-auto mx-md-0">
-                                <a href="https://wal-marting.com" target="_blank" class="d-inline-block mr-3 ml-0">
+                                <a href="https://wal-marting.com" target="_blank" class="d-inline-block me-3 ms-0">
                                     <img src="https://wal-marting.com/public/assets/img/play.png" class="mx-100 h-40px">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 ml-xl-auto col-md-4 mr-0">
+                    <div class="col-lg-3 ms-xl-auto col-md-4 me-0">
                         <div class="text-md-left mt-4">
                             <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
                                 Contact Info

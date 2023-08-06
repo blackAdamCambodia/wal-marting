@@ -1,5 +1,15 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+const HomeView = () => import('../views/HomeView.vue');
+const Login = () => import('../views/LoginView.vue');
+const Register = () => import('../views/RegisterView.vue');
+const PasswordReset = () => import('../views/PasswordReset.vue');
+const Compare = () => import('../views/Compare.vue');
+const Cart = () => import('../views/Cart.vue');
+const Terms = () => import('../views/Terms.vue');
+const ReturnPolicy = () => import('../views/Return.vue');
+const SupportPolicy = () => import('../views/Support.vue');
+const PrivacyPolicy = () => import('../views/Privacy.vue');
+const Products = () => import('../views/ProductDetails.vue');
 
 const  routes= [
     {path:'/',
@@ -8,35 +18,50 @@ const  routes= [
     },
     {path:'/login', 
     name: 'Login',
-    component: () => import('../views/LoginView.vue'), 
+    component: Login, 
     },
     {path:'/register', 
     name: 'Register',
-    component: () => import('../views/RegisterView.vue'), 
+    component: Register, 
     },
     {path:'/forgetpassword', 
     name: 'PasswordReset',
-    component: () => import('../views/PasswordReset.vue'), 
+    component: PasswordReset, 
     },
     {path:'/compare', 
     name: 'Compare',
-    component: () => import('../views/Compare.vue'), 
+    component: Compare, 
+    },
+    {path:'/cart', 
+    name: 'Cart',
+    component: Cart, 
     },
     {path:'/terms', 
     name: 'Terms',
-    component: () => import('../views/Terms.vue'), 
+    component: Terms, 
     } ,
     {path:'/return-policy', 
     name: 'ReturnPolicy',
-    component: () => import('../views/Return.vue'), 
+    component: ReturnPolicy, 
     },
     {path:'/support-policy', 
     name: 'SupportPolicy',
-    component: () => import('../views/Support.vue'), 
+    component: SupportPolicy, 
     },
     {path:'/privacy-policy', 
     name: 'PrivacyPolicy',
-    component: () => import('../views/Privacy.vue'), 
+    component: PrivacyPolicy, 
+    },
+    {path:'/products/:id',  
+    name: 'Products',
+    component: Products,
+    
+    },
+    
+    {path:'/products/:id',  
+    name: 'ProductDetails',
+    component: () => import('../components/Product.vue'),
+    
     }
 ]
 const router = createRouter({

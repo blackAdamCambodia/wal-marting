@@ -1,9 +1,9 @@
-<script setup>
-    import TopMenu from "../components/TopMenu.vue";
-    import Header from "../components/HeaderView.vue";
-    import PrivacyPolicy from "../components/PrivacyPolicy.vue";
-    import CompanyPolicy from "../components/CompanyPolicy.vue";
-    import Footer from "../components/FooterView.vue";
+/Common<script setup>
+    import TopMenu from "../components/Common/TopMenu.vue";
+    import Header from "../components/Common/HeaderView.vue";
+    import PrivacyPolicy from "../components/Common/PrivacyPolicy.vue";
+    import CompanyPolicy from "../components/Common/CompanyPolicy.vue";
+    import Footer from "../components/Common/FooterView.vue";
 </script>
 <template>
     <div>

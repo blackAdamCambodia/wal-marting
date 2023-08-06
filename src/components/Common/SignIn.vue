@@ -85,7 +85,7 @@ export default {
                                         </div>
 
                                         <div class=" mb-5">
-                                            <button type="submit" class="btn btn-primary  fw-600">
+                                            <button type="submit" class="btn btn-primary w-100 fw-600">
                                             Login
                                            
                                             </button>
