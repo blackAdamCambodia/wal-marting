@@ -76,7 +76,7 @@ export default {
 
                                                     </div>
                                                     <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
-                                                        <a href="https://wal-marting.com/product/crashstar-thickened-transparent-silicone-shockproof-phone-case-with-four-corners-anti-fall-airbag-for-iphone-14-13-12-11-pro-max-mini-xs-xr-x-8-7-6-6s-plus-se-2020-soft-clear-phone-casing-with-full-cover-camera-protection-simple-phone-cover-top-seller-3t3PW"
+                                                        <a :href="`/products/${featureProduct.id}`"
                                                             class="d-block text-reset" tabindex="0">{{ featureProduct.title }}</a>
                                                     </h3>
                                                 </div>

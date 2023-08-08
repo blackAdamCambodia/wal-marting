@@ -52,8 +52,11 @@ export default {
                                                             :src="product.image" :alt="product.title">
                                                     </a>
                                                     <div class="absolute-top-right aiz-p-hov-icon">
-                                                        <a href="javascript:void(0)" data-toggle="tooltip"
-                                                            data-title="Add to wishlist" data-placement="left" tabindex="0">
+                                                        <a href="#" data-toggle="tooltip"
+                                                            data-title="Add to wishlist" 
+                                                            data-placement="left" tabindex="0"
+                                                           @click.prevent="addToWishlist(product)" 
+                                                        >
                                                             <i class="fa fa-heart-o"></i>
                                                         </a>
                                                         <a href="javascript:void(0)" data-toggle="tooltip"

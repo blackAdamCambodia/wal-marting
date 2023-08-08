@@ -5,7 +5,7 @@ export default {
  
   data() {
     return {
-      email: null,
+      phone: null,
       password: null,
     };
   },
@@ -13,7 +13,7 @@ export default {
     async signin(e) {
       e.preventDefault();
       const body = {
-        email: this.email,
+        phone: this.phone,
         password: this.password,
       };
       await axios
@@ -47,13 +47,13 @@ export default {
                                         <input type="hidden" name="_token" >
                                         <div class="form-group">
                                             <input 
-                                            type="email" 
+                                            type="tel" 
                                             class="form-control"  
-                                            placeholder="Email"   
-                                            name="email" 
-                                            id="email" 
+                                            placeholder="Enter your phone number"   
+                                            name="phone" 
+                                            id="phone" 
                                             autocomplete="off" 
-                                            v-model="email" 
+                                            v-model="phone" 
                                             required
                                             >
                                         </div>

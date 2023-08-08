@@ -1,7 +1,7 @@
 <script setup>
     import TopMenu from "../components/Common/TopMenu.vue";
     import Header from "../components/Common/HeaderView.vue";
-    import SupportPolicy from "../components/Common/SupportPolicy.vue";
+    import FrequentlyAsked from "../components/Common/FrequentlyAsked.vue";
     import CompanyPolicy from "../components/Common/CompanyPolicy.vue";
     import Footer from "../components/Common/FooterView.vue";
 </script>
@@ -9,7 +9,7 @@
     <div>
         <TopMenu />
         <Header />
-        <SupportPolicy/>
+        <FrequentlyAsked/>
         <CompanyPolicy />
         <Footer />
     </div>

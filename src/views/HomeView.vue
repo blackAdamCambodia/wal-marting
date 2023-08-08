@@ -2,6 +2,7 @@
 import TopMenu from "../components/Common/TopMenu.vue";
 import Header from "../components/Common/HeaderView.vue";
 import HomeBanner from "../components/Common/HomeBanner.vue";
+import CuponView from "../components/Home/CuponView.vue";
 import NewProduct from "../components/Home/NewProduct.vue";
 import FeaturedProduct from "../components/Home/FeaturedProduct.vue";
 import BestSelling from "../components/Home/BestSelling.vue";
@@ -19,6 +20,7 @@ import Footer from "../components/Common/FooterView.vue";
         <TopMenu />
         <Header />
         <HomeBanner />
+        <CuponView/>
         <NewProduct/>
         <FeaturedProduct />
         <BestSelling />

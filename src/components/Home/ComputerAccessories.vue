@@ -76,7 +76,7 @@ export default {
 
                                                     </div>
                                                     <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
-                                                        <a href="https://wal-marting.com/product/hoojo-refrigerator-organizer-8-clear-plastic-trash-cans-for-refrigerator-freezer-kitchen-cabinets-pantry-organizer-and-storage-bpa-free-refrigerator-organizer-125-inches-long-ITR6J"
+                                                        <a :href="`/products/${ bestProduct.id}`"
                                                             class="d-block text-reset" tabindex="0">{{ bestProduct.title}}</a>
                                                     </h3>
                                                 </div>

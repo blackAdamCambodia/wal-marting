@@ -5,7 +5,7 @@ export default {
   data() {
     return {
         name: null,
-      email: null,
+      phone: null,
       password: null,
       confirmPassword: null,
       isNotSame: 'this.password !== this.confirmPassword',
@@ -17,7 +17,7 @@ export default {
       if (this.password === this.confirmPassword) {
         // call signup api
         const user = {
-          email: this.email,
+          phone: this.phone,
           Name: this.name,
           password: this.password,
         };
@@ -25,8 +25,11 @@ export default {
         await axios
           .post("https://sc2houduan.bitlandweb.com/addons/shopro/user/register", user)
           .then(() => {
-            this.$router.replace("/");
-           
+            this.$router.replace("/login");
+            Swal.fire({
+              text: "User signup successful, please login",
+              icon: "success",
+            });
           })
           .catch((err) => console.log("err", err));
       } else {
@@ -69,11 +72,11 @@ export default {
 
                                         <div class="form-group">
                                             <input 
-                                            type="email" 
+                                            type="tel" 
                                             class="form-control"  
-                                            placeholder="Email"
-                                            name="email"
-                                            v-model="email"
+                                            placeholder="Enter your phone number"
+                                            name="phone"
+                                            v-model="phone"
                                             required
                                             >
                                         </div>

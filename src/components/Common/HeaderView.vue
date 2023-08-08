@@ -1,5 +1,5 @@
 <script setup>
-import logo from "/image/walmartLogo.png"
+import logo from "/image/shopro.png"
 const logoImage = {
     src:logo,
     alt:"walmart-logo"
@@ -13,7 +13,7 @@ const logoWidth= "maxWidth:100%; height:40px"
                 <div class="d-flex align-items-center">
 
                     <div class="col-auto col-xl-3 pl-0 pr-3 d-flex align-items-center">
-                        <a class="d-block py-4 me-3 ms-0" href="https://shancheng2.chainbitraclo.com">
+                        <a class="d-block py-4 me-3 ms-0" href="/">
                             <img v-bind="logoImage" :style="logoWidth" height="40">
                         </a>
 

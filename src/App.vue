@@ -1,6 +1,6 @@
 <script >
 export default {
-  data() {
+  setup() {
     return {
       baseURL : "https://sc2houduan.bitlandweb.com/addons/shopro/",
      

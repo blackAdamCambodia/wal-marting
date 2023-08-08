@@ -4,15 +4,15 @@ import axios from 'axios'
 export default {
   data() {
     return {
-      bestProducts: []
+      womenCloths: []
     }
   },
   mounted() {
     axios
       .get('https://sc2houduan.bitlandweb.com/addons/shopro/goods/lists?category_id=73&page=1')
       .then((response) => {
-        this.bestProducts = response.data.data.data
-        console.log(this.bestProducts)
+        this.womenCloths = response.data.data.data
+        console.log(this.womenCloths)
       })
   }
 }
@@ -38,7 +38,7 @@ export default {
                             <div class="slick-track d-flex  "
                                 style="opacity: 1; width: 2688px; transform: translate3d(0px, 0px, 0px);">
                                 <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false"
-                                v-for="bestProduct in bestProducts" :key="bestProduct.id"
+                                v-for="womenCloth in womenCloths" :key="womenCloth.id"
                                     style="width: 224px;">
                                     <div>
                                         <div class="carousel-box" style="width: 100%; display: inline-block;">
@@ -48,7 +48,7 @@ export default {
                                                     <a href="https://wal-marting.com/product/hoojo-refrigerator-organizer-8-clear-plastic-trash-cans-for-refrigerator-freezer-kitchen-cabinets-pantry-organizer-and-storage-bpa-free-refrigerator-organizer-125-inches-long-ITR6J"
                                                         class="d-block" tabindex="0">
                                                         <img class="img-fit mx-auto h-140px h-md-210px ls-is-cached lazyloaded"
-                                                        :src="bestProduct.image" :alt="bestProduct.title"
+                                                        :src="womenCloth.image" :alt="womenCloth.title"
                                                             >
                                                     </a>
                                                     <div class="absolute-top-right aiz-p-hov-icon">
@@ -71,14 +71,14 @@ export default {
                                                 </div>
                                                 <div class="p-md-3 p-2 text-left">
                                                     <div class="fs-15">
-                                                        <span class="fw-700 text-primary">{{ bestProduct.price}}</span>
+                                                        <span class="fw-700 text-primary">{{ womenCloth.price}}</span>
                                                     </div>
                                                     <div class="rating rating-sm mt-1">
 
                                                     </div>
                                                     <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
-                                                        <a href="https://wal-marting.com/product/hoojo-refrigerator-organizer-8-clear-plastic-trash-cans-for-refrigerator-freezer-kitchen-cabinets-pantry-organizer-and-storage-bpa-free-refrigerator-organizer-125-inches-long-ITR6J"
-                                                            class="d-block text-reset" tabindex="0">{{ bestProduct.title}}</a>
+                                                        <a :href="`/products/${ womenCloth.id}`"
+                                                            class="d-block text-reset" tabindex="0">{{ womenCloth.title}}</a>
                                                     </h3>
                                                 </div>
                                             </div>

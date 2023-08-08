@@ -9,6 +9,7 @@ export default {
       products: [],
      
     }
+    
   },
   mounted(param) {
     console.log(this.$route.params.id)
@@ -46,12 +47,14 @@ export default {
     },
     addToCart(){
         axios
-      .get('https://sc2houduan.bitlandweb.com/addons/shopro/cart/add',{"goods_list":[{"goods_id":17,"goods_num":1,"sku_price_id":67,"goods_price":"2999.00"}],"from":"goods"})
+      .get('https://sc2houduan.bitlandweb.com/addons/shopro/cart',{"goods_list":[{"goods_id":17,"goods_num":1,"sku_price_id":67,"goods_price":"2999.00"}],"from":"goods"})
       .then((response) => {
         alert(response.data.data.msg)
         console.log(this.products)
       })
     }
+    
+    
 }
 }
 
@@ -202,7 +205,7 @@ export default {
 
                                 <div class="mt-3">
                                     <button type="button" class="btn btn-soft-primary  add-to-cart fw-600 me-3 "
-                                        @click="addToCart()">
+                                    @click="addToCart(product)">
                                         <i class="fa fa-shopping-bag"></i>
                                         <span class="d-none d-md-inline-block ms-2"> Add to cart</span>
                                     </button>
@@ -371,7 +374,7 @@ export default {
                                             </div>
                                             <div class="col-7 text-left">
                                                 <h4 class="fs-13 text-truncate-2">
-                                                    <a href="#" class="d-block text-reset">{{ bestProduct.title }}</a>
+                                                    <a :href="`/products/${bestProduct.id}`" class="d-block text-reset">{{ bestProduct.title }}</a>
                                                 </h4>
                                                 <div class="rating rating-sm mt-1">
                                                     <i class="fa fa-star"></i>

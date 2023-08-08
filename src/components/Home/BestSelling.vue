@@ -82,7 +82,7 @@ export default {
 
                                                     </div>
                                                     <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px">
-                                                        <a href="#"
+                                                        <a :href="`/products/${bestProduct.id}`"
                                                             class="d-block text-reset" tabindex="-1">{{ bestProduct.title }}</a>
                                                     </h3>
                                             </div>

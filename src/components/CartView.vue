@@ -1,7 +1,5 @@
 <script>
-export default {
 
-}
 </script>
 <template>
     <div>
@@ -45,6 +43,7 @@ export default {
                 </div>
             </div>
         </section>
+        
         <section class="mb-4" id="cart-summary">
             <div class="container">
                 <div class="row">
